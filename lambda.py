@@ -14,3 +14,19 @@ print(list(map(lambda x : x * 2,nums)))
 # filter
 nums = [1,2,3,4,11,12,13,14,15]
 print(list(filter(lambda x : (x % 2) == 0, nums)))
+
+# sorted
+animal_list =[
+    ("ライオン",58),
+    ("チーター",110),
+    ("シマウマ",60)
+]
+
+faster_list = sorted(
+    animal_list,
+    key = lambda ani : ani[1],
+    reverse = True
+)
+
+for i in faster_list: print(i)
+
